@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <!-- <title>Padholeekho</title> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="/Library/Bootstrap/bootstrap.min.css"> 
+    <link rel="stylesheet" href="/navbar/Navbar.css"> 
+    <link rel="stylesheet" href="/style.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'> 
+</head> 
+<body> 
+    <header class="main-header">
+        <nav class="navbar-top navbar">
+           <a href="index.html" class="logo">
+                <img src="img/cholalogo.png" class="img-fluid" alt="Logo">
+           </a>
+           <form class="search-form">
+              <input type="text" class="textbox" placeholder="Search">
+              <input title="Search" value="" type="submit" class="button">
+           </form>
+           <ul class="navbar-btn-login">
+              <li>
+                 <button type="button" class="btn btn-login-reg btn-outline-success"><i class="fa fa-user fa-sm"></i> Login</button>
+              </li>
+              <li>
+                 <button type="button" class="btn btn-login-reg btn-outline-success"><i class="fa fa-address-card fa-sm"></i> Register</button>
+              </li>
+           </ul>
+        </nav>
+     </header>
+     <ul class="exo-menu">
+        <li>
+            <a class="active" href="#"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li class="mega-drop-down">
+           <a href="#"><i class="fa fa-laptop"></i> Competitive Exam</a>
+           <div class="animated fadeIn mega-menu">
+                <div class="mega-menu-wrap">
+                    <div class="row">
+                        <div class="col-md-1 col-6">
+                            <h4 class="mega-title">CAT</h4>
+                        </div>
+                        <div class="col-md-1 col-6">
+                            <h4 class="mega-title">MBA</h4>
+                        </div>
+                        <div class="col-md-1 col-6">
+                            <h4 class="mega-title">IIT-JEE</h4>
+                        </div>
+                        <div class="col-md-1 col-6">
+                            <h4 class="mega-title">NEET</h4>
+                        </div>
+                        <div class="col-md-1 col-6">
+                            <h4 class="mega-title">IAS / IPS</h4>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-info-circle"></i> About Us
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-list-alt"></i> Enquiry
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-phone-square"></i> Support
+            </a>
+        </li>
+        <li class="float-right">
+            <a href="#">
+                <i class="fas fa-shopping-cart"></i> Cart
+            </a>
+        </li>
+        <li class="float-right">
+            <a href="#">
+                <i class="far fa-heart"></i> Wishlist
+            </a>
+        </li>
+        <a id="nav-toggle" href="#"><span></span></a>
+     </ul>
+    <script src="/Library/Jquerry/jquery.min.js"></script>
+    <script src="/Library/Bootstrap/popper.min.js"></script>
+    <script src="/Library/Bootstrap/bootstrap.min.js"></script> 
+    <script>
+        document.querySelector("#nav-toggle").addEventListener("click", function() {
+            $('.exo-menu').toggleClass('display');
+            this.classList.toggle("active");
+        })
+    </script>
+</body> 
+</html>
